@@ -1592,41 +1592,10 @@ justify-content: center;
 ========================= */
 
 /* フル画面〜768pxの間、まだ横並びのまま縮む範囲の調整 */
-@media screen and (max-width: 1200px) and (min-width: 769px) {
-  .about-studio,
-  .about-facilities {
-    gap: 40px; /* 80px → 縮小 */
-  }
 
-  .about-studiotext p,
-  .facilities-text p,
-  .about-studiotext h2,
-  .facilities-text h2,
-  .about-studiotext h3,
-  .facilities-text h3 {
-    white-space: normal; /* nowrapを解除、テキストが折り返せるように */
-  }
 
-  .about-studioimg img {
-    margin-left: 40px; /* 160px → 縮小 */
-  }
 
-  .facilities-img img {
-    margin-right: 40px; /* 160px → 縮小 */
-  }
-
-  .feature-list li,
-  .facilities-list li {
-    white-space: normal;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  /* ここから下は、さっき送ってもらった内容そのままでOK */
-  ...
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
 
   /* About / Facilities 共通 */
   .about-studio,
@@ -1645,12 +1614,12 @@ justify-content: center;
     display: block;
     width: 100%;
     margin-left: 0;
-    margin-bottom: 0;
+    padding-bottom: 30px;
   }
 
   .about {
     padding-top: 40px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
 
   /* About Studio */
@@ -1691,7 +1660,8 @@ justify-content: center;
     width: 100%;
     height: auto;
     margin-left: 0;
-    border-radius: 10px;
+    
+  
   }
 
   /* 特徴リスト */
