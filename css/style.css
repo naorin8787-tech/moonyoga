@@ -1591,7 +1591,7 @@ justify-content: center;
    スマホ用
 ========================= */
 
-/* フル画面〜768pxの間、まだ横並びのまま縮む範囲の調整 */
+
 
 
 
@@ -1614,7 +1614,7 @@ justify-content: center;
     display: block;
     width: 100%;
     margin-left: 0;
-    padding-bottom: 30px;
+   
   }
 
   .about {
@@ -1654,13 +1654,14 @@ justify-content: center;
   /* About Studio 画像 */
   .about-studioimg {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .about-studioimg img {
     width: 100%;
     height: auto;
     margin-left: 0;
-    
+    border-radius: 10px;
   
   }
 
