@@ -367,54 +367,66 @@ section.class {
 
 /*footer---------*/
 
-.first-trial img {
-  width: 100%;
-  height: auto;
-}
-
 .first-trial {
   position: relative;
 }
 
+.first-trial img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 9%;
 }
 
 .inner h2 {
-  position: absolute;
-  top: 15%;
-  left: 9%;
+  position: static;      /* 古い absolute 指定を強制解除 */
   color: #3c612e;
-  font-size: 35px;
+  font-size: 44px;
+  margin: 0 0 28px 0;
+  text-align: left;      /* 中央寄せ指定が残っていても上書き */
+  width: auto;
 }
 
 .inner p {
-  position: absolute;
-  top: 35%;
-  left: 9%;
   color: #3c612e;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.9;
+  margin: 0 0 36px;
+  max-width: 320px;
 }
 
 .inner a {
-  position: absolute;
-  top: 69%;
-  left: 9%;
+  display: inline-block;
+  width: fit-content;
   border: 2px solid #3c612e;
-  padding: 9px 20px;
-  border-radius: 15px;
+  padding: 14px 28px;
+  border-radius: 30px;
   background-color: #3c612e;
-  color: white;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 16px;
+  white-space: nowrap;
 }
 
-footer small {
+.copyright {
   display: block;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 /*studio.html---------*/
 
 .about-studio,
