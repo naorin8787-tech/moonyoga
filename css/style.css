@@ -392,11 +392,11 @@ section.class {
 }
 
 .inner h2 {
-  position: static;      /* 古い absolute 指定を強制解除 */
+  position: static;      
   color: #3c612e;
   font-size: 44px;
   margin: 0 0 28px 0;
-  text-align: left;      /* 中央寄せ指定が残っていても上書き */
+  text-align: left;      
   width: auto;
 }
 
@@ -1267,58 +1267,76 @@ justify-content: center;
 }
 
 /* =========================
-   スマホ用
+   スマホ用 First Trial
 ========================= */
 
 @media screen and (max-width: 768px) {
 
   .first-trial {
+    width: 100%;
     position: relative;
   }
 
+  /* 画像 */
   .first-trial img {
+    display: block;
     width: 100%;
-    height: 220px;
+    height: 180px;
     object-fit: cover;
   }
 
-  .inner {
+  /* 中身 */
+  .first-trial .inner {
+    position: static;
+    width: 100%;
     max-width: none;
-    padding: 25px 20px 30px;
+    padding: 35px 20px 40px;
+    box-sizing: border-box;
     text-align: center;
   }
 
-  .inner h2 {
-    position: static;
-    margin: 0 0 18px;
-    color: #3c612e;
-    font-size: 26px;
-  }
-
-  .inner p {
+  /* タイトル */
+  .first-trial .inner h2 {
     position: static;
     margin: 0 0 25px;
     color: #3c612e;
-    font-size: 14px;
-    line-height: 2;
+    font-size: 30px;
+    line-height: 1.3;
+    text-align: center;
   }
 
-  .inner a {
+  /* 説明文 */
+  .first-trial .inner p {
+    position: static;
+    margin: 0 auto 30px;
+    color: #3c612e;
+    font-size: 16px;
+    line-height: 2;
+    text-align: center;
+  }
+
+  /* ボタン */
+  .first-trial .inner a {
     position: static;
     display: inline-block;
-    padding: 9px 18px;
-    border: 2px solid #3c612e;
-    border-radius: 15px;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
     background-color: #3c612e;
-    color: white;
-    font-size: 13px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
     text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
   }
 
+  /* フッター */
   footer small {
     margin: 10px 0;
     font-size: 10px;
   }
+
 }
 
 /* =========================
