@@ -1266,78 +1266,7 @@ justify-content: center;
   }
 }
 
-/* =========================
-   スマホ用 First Trial
-========================= */
 
-@media screen and (max-width: 768px) {
-
-  .first-trial {
-    width: 100%;
-    position: relative;
-  }
-
-  /* 画像 */
-  .first-trial img {
-    display: block;
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-
-  /* 中身 */
-  .first-trial .inner {
-    position: static;
-    width: 100%;
-    max-width: none;
-    padding: 35px 20px 40px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  /* タイトル */
-  .first-trial .inner h2 {
-    position: static;
-    margin: 0 0 25px;
-    color: #3c612e;
-    font-size: 30px;
-    line-height: 1.3;
-    text-align: center;
-  }
-
-  /* 説明文 */
-  .first-trial .inner p {
-    position: static;
-    margin: 0 auto 30px;
-    color: #3c612e;
-    font-size: 16px;
-    line-height: 2;
-    text-align: center;
-  }
-
-  /* ボタン */
-  .first-trial .inner a {
-    position: static;
-    display: inline-block;
-    padding: 16px 30px;
-    border: none;
-    border-radius: 30px;
-    background-color: #3c612e;
-    color: #fff;
-    font-size: 15px;
-    line-height: 1.5;
-    text-decoration: none;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  /* フッター */
-  footer small {
-    margin: 10px 0;
-    font-size: 10px;
-  }
-
-}
 
 /* =========================
    スマホ用
@@ -1818,37 +1747,77 @@ justify-content: center;
   }
 
 
-  /* =========================
-     First Trial
-  ========================= */
+ 
+
+/* =========================
+   スマホ用 First Trial
+========================= */
+
+@media screen and (max-width: 768px) {
 
   .first-trial {
+    width: 100%;
     position: relative;
   }
 
+  /* 画像 */
   .first-trial img {
-    width: 100%;
-    height: auto;
     display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
   }
 
+  /* 中身 */
   .first-trial .inner {
-    padding: 30px 20px;
+    position: static;
+    width: 100%;
+    max-width: none;
+    padding: 35px 20px 40px;
+    box-sizing: border-box;
     text-align: center;
   }
 
-  .first-trial h2 {
+  /* タイトル */
+  .first-trial .inner h2 {
+    position: static;
+    margin: 0 0 25px;
+    color: #3c612e;
     font-size: 30px;
+    line-height: 1.3;
+    text-align: center;
   }
 
-  .first-trial p {
-    font-size: 14px;
+  /* 説明文 */
+  .first-trial .inner p {
+    position: static;
+    margin: 0 auto 30px;
+    color: #3c612e;
+    font-size: 16px;
     line-height: 2;
+    text-align: center;
   }
 
-  .first-trial a {
-    font-size: 14px;
+  /* ボタン */
+  .first-trial .inner a {
+    position: static;
+    display: inline-block;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #3c612e;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* フッター */
+  footer small {
+    margin: 10px 0;
+    font-size: 10px;
   }
 
 }
-
