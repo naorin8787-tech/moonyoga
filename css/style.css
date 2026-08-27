@@ -1753,7 +1753,7 @@ justify-content: center;
    スマホ用 First Trial
 ========================= */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
 
   .first-trial {
     width: 100%;
